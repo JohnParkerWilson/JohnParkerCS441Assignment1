@@ -12,7 +12,7 @@ class TwoSum {
         //Iterate here
         for (int i = 0; i < arraySize; i++) {
             for(int j = 0; j < arraySize; j++){
-                if (nums[i] + nums[j] == target) {
+                if (nums[i] + nums[j] == target && i != j) {
                     results[0] = i;
                     results[1] = j;
                     foundTarget = true;
